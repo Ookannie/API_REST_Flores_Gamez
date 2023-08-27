@@ -24,10 +24,6 @@ def get_user(user_id):
 @user_bp.route('/users', methods=['POST'])
 def create_user():
     user_data = request.json
-    user_id = user_data.get('user_id')
-    existing_user = control_user.get_user_by_id(user_id)
-    if existing_user:
-        return jsonify({'message': 'User already exists'}), 400
 
     result = control_user.create_user(user_data)
     return jsonify({'message': 'User created successfully', 'user_id': str(result.inserted_id)}), 201
