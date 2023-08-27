@@ -1,6 +1,4 @@
 from flask import Blueprint, jsonify, request
-from pymongo import MongoClient
-from bson import ObjectId
 from controls import control_user as controlUser
 
 
