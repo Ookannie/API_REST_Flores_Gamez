@@ -1,7 +1,10 @@
 from DB_connection import db_connection
 
 class UserDAO:
-
+    '''
+    Clase que implementa el patrón de diseño Data access 
+    object para la lógica de base de datos de la colección users
+    '''
     def __init__(self):
         self.users_collection = db_connection.db['users']
 

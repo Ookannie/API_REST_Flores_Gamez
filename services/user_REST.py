@@ -5,6 +5,7 @@ from controls import control_user as controlUser
 control_user = controlUser.ControlUser()
 user_bp = Blueprint("user_bp", __name__)
 
+#Blueprint para el servicio REST para la lógica de las peticiones de usuarios desde el front
 
 @user_bp.route('/users', methods=['GET'])
 def get_users():

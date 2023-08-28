@@ -1,7 +1,9 @@
 from DAOS import mqtt_DAO
 
 class ControlMQTT:
-
+    '''
+    Clase de abstracción entre acceso a datos y servicio REST
+    '''
     def __init__ (self):
         self.mqttDAO = mqtt_DAO.MQTT_DAO()
 

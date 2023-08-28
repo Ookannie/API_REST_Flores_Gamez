@@ -1,7 +1,9 @@
 from DAOS import user_DAO
 
 class ControlUser:
-
+    '''
+    Clase de abstracción entre acceso a datos y servicio REST
+    '''
     def __init__ (self):
         self.userDAO = user_DAO.UserDAO()
 
